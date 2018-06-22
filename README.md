@@ -1,1 +1,1 @@
-ts-react-starter2
+ts-react-starter
