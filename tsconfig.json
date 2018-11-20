@@ -2,7 +2,7 @@
   "compilerOptions": {
     /* Basic Options */
     "target": "es6",
-    "module": "es6",
+    "module": "esNext",
     "lib": ["es2017", "es7", "dom"],
     "allowJs": true /* Allow javascript files to be compiled. */,
     // "checkJs": true,                       /* Report errors in .js files. */
