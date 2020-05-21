@@ -1,21 +1,29 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { start, stop, reset } from '../../store/actions'
 
-const App = ({ counter, startOnClick, stopOnClick, resetOnClick }: Props) => (
-  <div>
-    <button onClick={startOnClick}>Start</button>
-    <button onClick={stopOnClick}>Stop</button>
-    <button onClick={resetOnClick}>Reset</button>
-    <div>
-      <h1>{counter}</h1>
-    </div>
-  </div>
-)
+class App extends Component<Props> {
+  render() {
+    return (
+      <div>
+        <button onClick={this.props.start}>Start</button>
+        <button onClick={this.props.stop}>Stop</button>
+        <button onClick={this.props.reset}>Reset</button>
+        <div>
+          <h1>{this.props.counter}</h1>
+        </div>
+      </div>
+    )
+  }
+}
 
 export interface Props {
   counter: number
-  startOnClick: () => any
-  stopOnClick: () => any
-  resetOnClick: () => any
+  start: () => any
+  stop: () => any
+  reset: () => any
 }
 
-export default App
+const withRedux = connect(({ counter }: { counter: number }) => ({ counter }), { start, stop, reset })
+
+export default withRedux(App)

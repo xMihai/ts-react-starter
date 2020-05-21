@@ -1,2 +1,2 @@
-# web-worker-redux-playground
-Playground for developing the Web Worker Redux
+# ts-react-starter
+Starter for TypeScript application with React

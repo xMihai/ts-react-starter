@@ -6,6 +6,6 @@
     "javascript.validate.enable": false,
     "files.insertFinalNewline": true,
     "tslint.ignoreDefinitionFiles": false,
-    "typescript.autoImportSuggestions.enabled": false,
+    "typescript.autoImportSuggestions.enabled": false
   }
   
