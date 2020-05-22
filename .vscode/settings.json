@@ -6,6 +6,11 @@
     "javascript.validate.enable": false,
     "files.insertFinalNewline": true,
     "tslint.ignoreDefinitionFiles": false,
-    "typescript.autoImportSuggestions.enabled": false
+    "typescript.autoImportSuggestions.enabled": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.enablePreview": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.enabled": false
   }
   
