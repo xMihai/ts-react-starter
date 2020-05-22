@@ -13,6 +13,10 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
     modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+    alias: {
+      '@components': path.resolve(__dirname, 'src/components/'),
+      '@decorators': path.resolve(__dirname, 'src/decorators/'),
+    },
   },
   module: {
     rules: [{ test: /\.tsx?$/, loader: 'ts-loader' }],

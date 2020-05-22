@@ -1,5 +1,5 @@
 import React, { Component, ReactNode } from 'react'
-import withBoundedMethods from '../../decorators/withBoundedMethods'
+import withBoundedMethods from '@decorators/withBoundedMethods'
 
 @withBoundedMethods
 class App extends Component<Props, State> {
